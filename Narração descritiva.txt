@@ -1,0 +1,7 @@
+Este código Python é um sistema de gerenciamento básico para interagir com um banco de dados MySQL. Ele oferece funcionalidades como criar, ler, atualizar e excluir (CRUD) registros em diferentes tabelas, como funcionários, servidores, hardware, periféricos e softwares. A conexão com o banco de dados é estabelecida por meio da função conectar, que utiliza a biblioteca mysql.connector.
+
+As funções específicas, como consultar_funcionarios_por_software, criar_funcionario, ler_servidores e outras, são projetadas para manipular operações relacionadas a cada tabela. Por exemplo, a função consultar_funcionarios_por_software realiza uma consulta complexa para recuperar funcionários associados a um software específico.
+
+A entrada do usuário é gerenciada pela função obter_input, garantindo a validação dos dados inseridos. Os menus interativos e o loop principal em main permitem ao usuário escolher a tabela e a operação desejadas. O código é estruturado de forma modular, facilitando a manutenção e expansão.
+
+Em resumo, esse script fornece uma estrutura básica para interagir com um banco de dados MySQL, permitindo ao usuário executar diversas operações em diferentes tabelas, tudo isso por meio de uma interface simples e interativa.
