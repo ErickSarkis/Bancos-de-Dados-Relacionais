@@ -1,0 +1,54 @@
+Função conectar():
+    Retorna conexão com o banco de dados MySQL
+
+Função consultar_funcionarios_por_software(cursor, id_software):
+    Executa consulta SQL para obter funcionários associados a um software específico
+    Exibe os resultados na tela
+
+Função criar_funcionario(cursor, nome, cargo, departamento, salario, data_contratacao):
+    Executa uma inserção na tabela 'funcionários' com os dados fornecidos
+
+Função criar_servidor(cursor, nome, so, armazenamento_tb, data_instalacao, custo_manutencao, status_servidor):
+    Executa uma inserção na tabela 'servidores' com os dados fornecidos
+
+... (Funções semelhantes para outras tabelas)
+
+Função ler_funcionarios(cursor):
+    Executa uma consulta SQL para recuperar todos os registros da tabela 'funcionários'
+    Exibe os resultados na tela
+
+... (Funções semelhantes para outras tabelas)
+
+Função atualizar_funcionario(cursor, id_funcionario, nova_coluna, novo_valor):
+    Executa uma atualização na tabela 'funcionários' com os dados fornecidos
+
+... (Funções semelhantes para outras tabelas)
+
+Função deletar_funcionario(cursor, id_funcionario):
+    Executa uma exclusão na tabela 'funcionários' para o ID fornecido
+
+... (Funções semelhantes para outras tabelas)
+
+Função obter_input(tipo, mensagem):
+    Loop para obter entrada do usuário com tratamento de erros
+
+Função menu_tabela():
+    Exibe opções de tabelas disponíveis para o usuário
+
+Função menu_operacoes():
+    Exibe opções de operações disponíveis para o usuário
+
+Função main():
+    Conecta-se ao banco de dados
+    Loop principal para seleção de tabela e operação
+        Dentro do loop:
+            - Exibe menu de tabelas
+            - Solicita escolha da tabela
+            - Entra em loop interno para operações na tabela escolhida
+                - Exibe menu de operações
+                - Solicita escolha da operação
+                - Executa operação escolhida
+    Fecha a conexão ao final
+
+Se o script for executado diretamente:
+    Chama a função main()
